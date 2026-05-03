@@ -9,6 +9,10 @@
 #endif
 
 // See README.md file chapter "How to Configure" for some hints how to adapt the configuration to your panel
+#define MATRIX_PANEL_WIDTH  96
+#define MATRIX_PANEL_HEIGHT 48
+
+
 
 // Set MATRIX_PANEL_WIDTH and MATRIX_PANEL_HEIGHT to the width and height of your matrix panel!
 #ifndef MATRIX_PANEL_WIDTH

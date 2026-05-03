@@ -26,7 +26,7 @@
 #include "hue_value_spectrum.hpp"
 #include "pixel_fill.hpp"
 
-static int demo_index = 0; ///< Example selector
+static int demo_index = 3; ///< Example selector
 
 // Perform initialisation
 int pico_led_init(void)
@@ -81,6 +81,8 @@ int led_init(void)
  */
 bool skip_to_next_demo(__unused struct repeating_timer *t)
 {
+    demo_index=3;
+    return true;
     if (++demo_index > 6)
     {
         demo_index = 0; // Cycle through all examples
